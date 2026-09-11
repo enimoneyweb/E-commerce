@@ -5,7 +5,7 @@ const products = [
     category: "shirts",
     price: 18500,
     badge: "NEW",
-    image: "images/product1.jpg"
+    image: "/product1.jpg"
   },
 
   {
@@ -14,7 +14,7 @@ const products = [
     category: "shirts",
     price: 24000,
     badge: "",
-    image: "images/product2.jpg"
+    image: "/product2.jpg"
   },
 
   {
@@ -23,7 +23,7 @@ const products = [
     category: "shoes",
     price: 45000,
     badge: "POPULAR",
-    image: "images/product3.jpg"
+    image: "/product3.jpg"
   },
 
   {
@@ -32,7 +32,7 @@ const products = [
     category: "shoes",
     price: 52000,
     badge: "",
-    image: "images/product4.jpg"
+    image: "/product4.jpg"
   },
 
   {
@@ -41,7 +41,7 @@ const products = [
     category: "accessories",
     price: 12000,
     badge: "NEW",
-    image: "images/product5.jpg"
+    image: "/product5.jpg"
   },
 
   {
@@ -50,7 +50,7 @@ const products = [
     category: "accessories",
     price: 38000,
     badge: "",
-    image: "images/product6.jpg"
+    image: "/product6.jpg"
   },
 
   {
@@ -59,7 +59,7 @@ const products = [
     category: "shirts",
     price: 16000,
     badge: "",
-    image: "images/product7.jpg"
+    image: "/product7.jpg"
   },
 
   {
@@ -68,7 +68,7 @@ const products = [
     category: "accessories",
     price: 27000,
     badge: "NEW",
-    image: "images/product8.jpg"
+    image: "/product8.jpg"
   }
 ];
 
