@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <meta name="description"
+    content="NESTA — premium fashion, sneakers and accessories.">
+ <script src="js/index.js" defer></script>
+  <title>NESTA — Style Without Limits</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <div class="logo">
+      NESTA<span>.</span>
+    </div>
+
+    <nav class="desktop-nav">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+
+      <button id="searchBtn" class="icon-btn">
+        🔍
+      </button>
+
+      <button id="wishlistBtn" class="icon-btn">
+        ♡
+        <span id="wishlistCount">0</span>
+      </button>
+
+      <button id="cartBtn" class="icon-btn">
+        🛒
+        <span id="cartCount">0</span>
+      </button>
+
+      <button id="menuBtn" class="menu-btn">
+        ☰
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="mobile-menu">
+
+    <button id="closeMenu" class="close-btn">
+      ×
+    </button>
+
+    <a href="#home">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+
+  </div>
+
+
+  <!-- SEARCH -->
+  <div id="searchPanel" class="search-panel">
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search products..."
+    >
+
+    <button id="closeSearch">
+      ×
+    </button>
+
+  </div>
+
+
+  <!-- HERO -->
+  <main>
+
+    <section id="home" class="hero">
+
+      <div class="hero-content">
+
+        <p class="eyebrow">
+          NESTA COLLECTION 2026
+        </p>
+
+        <h1>
+          STYLE<br>
+          WITHOUT<br>
+          LIMITS<span>.</span>
+        </h1>
+
+        <p class="hero-text">
+          Premium fashion designed for people
+          who move differently.
+        </p>
+
+        <a href="#shop" class="primary-btn">
+          Shop Collection →
+        </a>
+
+      </div>
+
+      <div class="hero-number">
+        01
+      </div>
+
+    </section>
+
+
+    <!-- MARQUEE -->
+    <div class="marquee">
+
+      <div class="marquee-track">
+
+        <span>NEW SEASON</span>
+        <span>✦</span>
+        <span>NESTA</span>
+        <span>✦</span>
+        <span>STYLE WITHOUT LIMITS</span>
+        <span>✦</span>
+        <span>NEW SEASON</span>
+        <span>✦</span>
+
+      </div>
+
+    </div>
+
+
+    <!-- SHOP -->
+    <section id="shop" class="shop section">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="eyebrow">OUR COLLECTION</p>
+
+          <h2>
+            Shop <span>everything.</span>
+          </h2>
+        </div>
+
+        <p class="section-description">
+          Discover pieces built for everyday confidence.
+        </p>
+
+      </div>
+
+
+      <!-- FILTERS -->
+      <div class="filters">
+
+        <button class="filter active" data-category="all">
+          All
+        </button>
+
+        <button class="filter" data-category="shirts">
+          Shirts
+        </button>
+
+        <button class="filter" data-category="shoes">
+          Shoes
+        </button>
+
+        <button class="filter" data-category="accessories">
+          Accessories
+        </button>
+
+      </div>
+
+
+      <!-- PRODUCTS -->
+      <div id="productGrid" class="product-grid"></div>
+
+    </section>
+
+
+    <!-- PROMO -->
+    <section class="promo">
+
+      <div>
+        <p class="eyebrow">NESTA ESSENTIALS</p>
+
+        <h2>
+          Less noise.<br>
+          More <span>style.</span>
+        </h2>
+      </div>
+
+      <a href="#shop" class="outline-btn">
+        Explore →
+      </a>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="about section">
+
+      <div class="about-number">
+        02
+      </div>
+
+      <div class="about-content">
+
+        <p class="eyebrow">
+          ABOUT NESTA
+        </p>
+
+        <h2>
+          Built for the<br>
+          <span>next generation.</span>
+        </h2>
+
+        <p>
+          NESTA is a modern fashion brand focused on
+          clean design, confidence and everyday style.
+          We create pieces that fit your lifestyle,
+          not the other way around.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- NEWSLETTER -->
+    <section id="contact" class="newsletter section">
+
+      <p class="eyebrow">
+        STAY CONNECTED
+      </p>
+
+      <h2>
+        Get the latest<br>
+        from NESTA<span>.</span>
+      </h2>
+
+      <form id="newsletterForm">
+
+        <input
+          type="email"
+          id="emailInput"
+          placeholder="Your email address"
+          required
+        >
+
+        <button type="submit">
+          Subscribe →
+        </button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+
+  <!-- CART -->
+  <div id="cartOverlay" class="cart-overlay"></div>
+
+  <aside id="cartDrawer" class="cart-drawer">
+
+    <div class="cart-header">
+
+      <h2>Your Cart</h2>
+
+      <button id="closeCart">
+        ×
+      </button>
+
+    </div>
+
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="cart-footer">
+
+      <div class="cart-total">
+
+        <span>Total</span>
+
+        <strong id="cartTotal">
+          ₦0
+        </strong>
+
+      </div>
+
+      <button id="checkoutBtn" class="checkout-btn">
+        Checkout
+      </button>
+
+    </div>
+
+  </aside>
+
+
+  <!-- TOAST -->
+  <div id="toast" class="toast"></div>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-logo">
+      NESTA<span>.</span>
+    </div>
+
+    <p>
+      © 2026 NESTA. All rights reserved.
+    </p>
+
+    <p>
+      Designed & built by Enimoney.
+    </p>
+
+  </footer>
+
+</body>
+</html>
